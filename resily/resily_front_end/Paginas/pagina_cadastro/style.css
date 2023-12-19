@@ -1,0 +1,271 @@
+@font-face {
+  font-family: 'Westmount';
+  src: url(/fonts/Westmount\ Regular.otf);
+  font-family: 'WestmountBold';
+  src: url(/fonts/Westmount\ Bold.otf);
+
+}
+
+
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: 'Westmount', sans-serif;
+  background: rgba(231, 231, 231, 0.91);
+  display: contents;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  /* Responsive grid */
+  grid-template-rows: repeat(2, 100px);
+}
+
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* cor de fundo e ocupando 100% da tela */
+body {
+  overflow: hidden !important;
+  display: contents;
+  background: #fff;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* deixando a logo no meio */
+.logo-meio {
+  display: flex;
+  justify-content: center;
+}
+.logo-meio img {
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+}
+
+/* deixando o pai de todos no display flex */
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+/* tamanho do espaço do form */
+
+.container {
+  width: 655px;
+  height: 300px;
+  margin-top: 0px;
+}
+
+/* Configuração do form */
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+form label {
+  color: #5e3963;
+
+  font-size: 16px;
+}
+
+input {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  outline-style: none;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background: transparent;
+  border-color: #e27acc;
+  color: #000;
+  font-size: 16px;
+}
+
+/* FIM Configuração do form */
+
+/* Config botões */
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn button {
+  width: 282px;
+  height: 50px;
+  border-radius: 11px;
+  background: #2D2E4A;
+  box-shadow: -4px 6px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-left: 10px;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: 'Westmount', sans-serif !important;
+}
+
+  .btn :hover{
+  background-color: #E27ACC;
+  transition: 0.3s;
+  color: #2D2E4A
+}
+
+.btn-parceiro :hover{
+  background-color: #E27ACC;
+  transition: 0.3s;
+  color: #2D2E4A
+}
+
+
+.btn-parceiro {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.parceiro {
+  width: 282px;
+  height: 50px;
+  border-radius: 11px;
+  background: #2D2E4A;
+  box-shadow: -4px 6px 4px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  text-transform: uppercase;
+  font-family: 'Westmount', sans-serif;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/* FIM Config botões */

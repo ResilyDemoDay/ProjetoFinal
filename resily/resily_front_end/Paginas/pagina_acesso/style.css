@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'Westmount';
+    src: url(/fonts/Westmount\ Regular.otf);
+    font-family: 'WestmountBold';
+    src: url(/fonts/Westmount\ Bold.otf);
+
+}
+
+
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Westmount', sans-serif;
+    background: rgba(231, 231, 231, 0.91);
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /* Responsive grid */
+    grid-template-rows: repeat(2, 100px);
+    overflow: hidden;
+    display: contents;
+}
+
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+img {
+    width: 13rem;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.main {
+    margin-left: 60px;
+}
+
+
+.logo-meio {
+   
+    display: flex;
+    justify-content: center;
+
+}
+
+.container {
+    width: 655px;
+    height: 200px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 50px;
+    font-family: 'Westmount', sans-serif;
+    font-weight:bolder;
+    
+}
+
+.botao :hover{
+    background-color: #E27ACC;
+    transition: 0.3s;
+    color: #2D2E4A
+}
+
+.btn {
+    display: flex;
+    width: 280px;
+    margin-right: 55px;
+    border-radius: 11px;
+    background:#2D2E4A;
+    box-shadow: -4px 6px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    color: white;
+    
+    cursor: pointer;  
+    font-family: 'Westmount', sans-serif !important;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cadastro{
+    margin-left: 60px; 
+    text-decoration: none;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+    margin-right: 60px;
+    color: white;
+    
+}
+
+label{
+    color: #5E3963;
+    font-family: 'Westmount', sans-serif;
+}
+
+input {
+    width: 597px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: solid 1px #E27ACC;
+    outline-style: none;
+    background-color: transparent;
+    color: #000;
+    font-family: 'Westmount', sans-serif;
+}

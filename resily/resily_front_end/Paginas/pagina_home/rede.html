@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/VectorResily.png" type="image/x-icon">
+    <link rel="stylesheet" href="./rede.css">
+
+
+    <title>RESILY</title>
+</head>
+
+
+<body>
+
+    <div class="responsive">
+
+        <header class="navbar">
+
+            <div class="hamburgerMenu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="rede.html">INÍCIO</a></li>
+                    <li><a class="menu__item" href="../pagina_calendario/index.html">CALENDÁRIO</a></li>
+                    <li><a class="menu__item" href="#">MEU PERFIL</a></li>
+                </ul>
+            </div>
+
+            <div class="nav">
+
+                <div class="logo">
+                    <a href=""><img src="../../Assets/logo.svg" alt="Logo da resily"></a>
+                </div>
+
+                <div class="linha">
+                    <a id="inicio" href="#Inicio">INÍCIO</a>
+                </div>
+
+
+
+                <div class="linha">
+                    <a id="calendario" href="../pagina_calendario/index.html">CALENDÁRIO</a>
+                </div>
+
+                <div class="linha">
+                    <a id="meuPerfil" href="#Meu Perfil">MEU PERFIL</a>
+                </div>
+            </div>
+
+            <div class="perfilIcon">
+                <a href="#Perfil"></a>
+            </div>
+
+
+        </header>
+
+
+
+        <main>
+            <div class="bemVindo">
+                <h2 class="txtBemVindo">Bem-vinda, </h2>
+                <h2 class="userName">Mamãe</h2>
+            </div>
+
+
+
+            <div class="container">
+                <div class="containerCalendario">
+                    <div class="consultasCalendario">
+                        <div class="circulo">
+                            <img src="../../Assets/perfil.jpg" alt="Mulher">
+                        </div>
+
+
+                        <div class="capaPerfil" alt="">
+
+                        </div>
+
+                        <div class="nomePerfilCapa">
+                            <span>Janete Siqueira</span>
+                        </div>
+
+                        <div class="calendar">
+                            <div class="month">
+                                <i class="fa fa-angle-left prev"> </i>
+                                <div id="date" class="date"></div>
+                                <i class="fa fa-angle-right next"> </i>
+                            </div>
+                            <div class="weekdays">
+                                <div>Dom</div>
+                                <div>Seg</div>
+                                <div>Ter</div>
+                                <div>Qua</div>
+                                <div>Qui</div>
+                                <div>Sex</div>
+                                <div>Sáb</div>
+                            </div>
+                            <div class="days">
+                                <a href="../pagina_calendario/index.html"></a>
+                                <!-- Javascript -->
+
+                            </div>
+                            <div class="goto-today">
+                                <div class="goto">
+                                    <input type="text" placeholder="mm/yyyy" class="date-input">
+                                    <button class="goto-btn">Ir</button>
+                                </div>
+                                <button class="today-btn">Hoje</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <section class="carrosselFlex">
+                <div class="carrossel">
+                    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="imgTopico" src="../../Assets/topico01.png" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="imgTopico" src="../../Assets/topico02.png" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="imgTopico" src="../../Assets/topico03.png" alt="">
+                            </div>
+                        </div>
+                        <div class="botaoCarrossel">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                        </div>
+
+
+
+                        <div class="botaoCarrossel2">
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+            </section>
+
+
+            <!-- POSTAGENS -->
+
+            <textarea class="novoPost" placeholder="O que está pensando?" id="novoPost"></textarea>
+
+            <div class="compartilhe">
+                <form>
+
+                    <button id="compartilharBtn" type="button">Postar</button>
+                </form>
+            </div>
+
+
+
+
+
+            <section class="tudao">
+
+                <div id="boxContainer" class="boxContainer">
+                    <div id="postsContainer">
+                        <div class="post">
+                            <div class="perfilPost">
+                                <img src="../../Assets/perfil2.png" alt="">
+                                <div class="usuarioData">
+                                    <h2 class="nomePerfil">Francilene</h2>
+                                    <h4 class="dataPost">23/11/2023</h4>
+                                </div>
+                            </div>
+
+
+
+                            <div class="espacoPost">
+                                <p class="conteudoPost">Mamães incríveis! 🚀 Às vezes, é fácil se perder na correria,
+                                    né? Eu costumo tirar uma foto ou anotar no meu diário de mãe. Vamos
+                                    espalhar positividade! 🎉 #MãeVitoriosa #PequenasAlegrias</p>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="perfilPost">
+                                <img src="../../Assets/perfil3.png" alt="">
+                                <div class="usuarioData">
+                                    <h2 class="nomePerfil">Marta</h2>
+                                    <h4 class="dataPost">24/11/2023</h4>
+                                </div>
+                            </div>
+
+
+                            <div class="espacoPost">
+                                <p class="conteudoPost">Oi, mamães ! 🌙 Sei que as noites mal dormidas podem ser
+                                    difíceis. </p>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="perfilPost">
+                                <img src="../../Assets/perfil.png" alt="">
+                                <div class="usuarioData">
+                                    <h2 class="nomePerfil">Iranete</h2>
+                                    <h4 class="dataPost">22/11/2023</h4>
+                                </div>
+                            </div>
+
+                            <div class="espacoPost">
+                                <p class="conteudoPost">Oi, mãezinhas! 🌸 Só queria compartilhar um pouquinho da minha
+                                    jornada na maternidade. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+
+    <script src="./js/server.js"></script>
+
+
+</body>

@@ -1,0 +1,1466 @@
+@font-face {
+    font-family: 'Westmount';
+    src: url(/fonts/Westmount\ Regular.otf);
+    font-family: 'WestmountBold';
+    src: url(/fonts/Westmount\ Bold.otf);
+
+}
+
+
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Westmount', sans-serif;
+    background: rgba(231, 231, 231, 0.91);
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /* Responsive grid */
+    grid-template-rows: repeat(2, 100px);
+}
+
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.body {
+    background: rgba(231, 231, 231, 0.91);
+    width: 90rem;
+    height: 64rem;
+    overflow-y: auto;
+
+}
+
+
+.responsive {
+    display: flex;
+
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    background-color: #2D2E4A;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding-left: 1.3rem;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.31);
+    width: 143px;
+    margin-inline-start: 7px;
+    margin-top: 1.25rem;
+    top: -0.688rem;
+    height: 45.375rem;
+
+
+}
+
+.nav {
+    height: 62.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    text-align: center;
+
+
+}
+
+.hamburgerMenu {
+    display: none;
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+
+#menu__toggle:checked+.menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked+.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu__toggle:checked+.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+    left: 0 !important;
+}
+
+.menu__btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(226, 119, 205);
+    transition-duration: .25s;
+}
+
+.menu__btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn>span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 200px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #ECEFF1;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+
+}
+
+.menu__item:hover {
+    background-color: rgb(226, 119, 205);
+
+}
+
+
+.linha a {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 0.625rem;
+    margin-bottom: 3;
+
+
+}
+
+#minhaRede {
+    margin-right: 0.625rem;
+    font-size: 20px !important;
+    letter-spacing: 0.25rem;
+}
+
+
+#inicio {
+    font-size: 20px;
+    letter-spacing: 0.125rem;
+}
+
+#calendario {
+    font-size: 15px;
+}
+
+#meuPerfil {
+    font-size: 17px;
+    letter-spacing: 0.25rem;
+
+}
+
+.logo {
+
+    transform: translateY(20px);
+    height: auto;
+    width: 3.125rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 1.625rem;
+    z-index: 6;
+
+}
+
+
+
+
+
+.bemVindo {
+    margin-left: 11rem;
+    margin-top: 2rem;
+
+
+}
+
+
+.txtBemVindo {
+    font-size: 1.563rem;
+    width: 10.375rem;
+
+
+}
+
+.userName {
+    font-size: 1.5rem;
+
+}
+
+
+
+.carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.25rem;
+    background: #2D2E4A;
+    width: 58rem;
+    height: 22rem;
+    margin-left: 11rem;
+    margin-top: 0.5rem;
+
+}
+
+
+.capaPerfil {
+
+    border-radius: 25px;
+    width: 21.875rem;
+    height: 12.5rem;
+    background: url(./img/capa.png);
+    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+}
+
+
+.nomePerfilCapa {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    width: fit-content;
+    display: flex;
+    margin-left: 1rem;
+    margin-top: -3rem;
+    justify-content: center;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+.calendar {
+    background-color: #2D2E4A;
+    border-radius: 15px;
+}
+
+.calendar .date {
+    display: flex;
+    justify-content: center;
+    width: 9.375rem;
+    color: rgb(37, 37, 37);
+    font-weight: 800;
+
+}
+
+.calendar .fa-angle-left {
+    color: white;
+    font-weight: 900;
+}
+
+.calendar .fa-angle-right {
+    color: white;
+    font-weight: 900;
+}
+
+.calendar .month .prev,
+.calendar .month .next {
+    cursor: pointer;
+}
+
+.calendar .month .prev:hover,
+.calendar .month .next:hover {
+    color: var(--primary-clr);
+}
+
+.month {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    padding: 10px;
+
+}
+
+#date {
+    color: white;
+}
+
+.calendar .weekdays {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: white;
+}
+
+.calendar .weekdays div {
+    width: 14.28%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar .days {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.calendar .days .day {
+    /* border-radius: 5px; */
+    width: 14.28%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--primary-clr);
+    border: 1px solid #f5f5f5;
+    background: rgb(226, 119, 205);
+}
+
+.calendar .day:not(.prev-date, .next-date):hover {
+    color: #fff;
+    background-color: #2D2E4A;
+}
+
+.calendar .days .prev-date,
+.calendar .days .prev-date {
+    color: rgb(169, 82, 152);
+}
+
+.calendar .days .active {
+    position: relative;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: var(--primary-clr);
+}
+
+.calendar .days .next-date {
+    color: rgb(169, 82, 152)
+}
+
+
+.calendar .days .active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 18px 2px var(--primary-clr);
+}
+
+.calendar .days .today {
+    font-size: 1.2rem;
+    background-color: #2D2E4A;
+    color: rgb(226, 119, 205);
+
+}
+
+.calendar .days .event {
+    position: relative;
+
+}
+
+.calendar .days .event::after {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 75%;
+    height: 6px;
+    border-radius: 30px;
+    transform: translateX(-50%);
+    background-color: var(--primary-clr);
+}
+
+.calendar .event:hover::after {
+    background-color: #fff;
+
+}
+
+.calendar .active.event::after {
+    background-color: #fff;
+    bottom: 20%;
+}
+
+.calendar .active.event {
+    padding-bottom: 10px;
+}
+
+.calendar .goto-today {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    color: var(--primary-clr);
+}
+
+.calendar .goto-today .goto {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid var(--primary-clr);
+}
+
+.calendar .goto-today .goto :hover {
+    color: rgb(226, 119, 205);
+}
+
+.calendar .goto-today .goto input {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 20px;
+    color: var(--primary-clr);
+    border-radius: 5px;
+}
+
+.calendar .goto-today button {
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid var(--primary-clr);
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.calendar .goto-today button:hover {
+    color: rgb(226, 119, 205);
+    background-color: var(--primary-clr);
+
+}
+
+.calendar .goto-today .goto button {
+    border: none;
+    border-left: 1px solid var(--primary-clr);
+    border-radius: 0;
+    color: white;
+}
+
+
+
+.containerCalendario {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column-reverse;
+    float: right;
+    width: 350px;
+    height: 600px;
+    border-radius: 25px;
+    background: rgb(226, 119, 205);
+    margin-left: 2rem;
+    margin-right: -24rem;
+    margin-top: -3.5rem;
+
+}
+
+
+.consultas {
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    width: 350px;
+    height: 150px;
+    background-color: #2D2E4A;
+
+
+}
+
+.consultas h3 {
+
+    color: white;
+    margin-top: 1rem;
+}
+
+
+.compartilhe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -26rem;
+    margin-left: 15rem;
+
+}
+
+
+.novoPost {
+    display: flex;
+    height: 10rem;
+    width: 50rem;
+    border-radius: 10px;
+    border: solid #2D2E4A 5px;
+    resize: none;
+    margin-left: 13rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 27rem;
+    background: #ffffff;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.31);
+    z-index: 1;
+
+
+}
+
+.novoPost ::placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+.compartilhe button {
+    width: 7rem;
+    margin-left: -10rem;
+    height: 1.875rem;
+    border-radius: 30px;
+    background-color: #B0A3BA;
+    border-radius: 25px;
+    border: 1px solid #B0A3BA;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.31);
+    z-index: 3;
+    margin-top: 1rem;
+    position: absolute;
+    /* Add this line */
+    top: 580px;
+    /* Adjust the value based on your layout */
+    margin-left: 16rem;
+    transform: translate(-50%, -50%);
+    /* Center the button */
+    font-size: 15px;
+}
+
+.compartilhe button :hover {
+    background-color: #F5F5F5;
+}
+
+
+
+
+.boxContainer {
+    width: 52.875rem;
+    height: 81.563rem;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #FFF;
+    margin-left: 180px;
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.post {
+    margin-left: 2.188rem;
+    margin-top: 1.25rem;
+    width: 48.6rem;
+    height: 23.188rem;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: rgba(236, 135, 207, 0.62);
+
+
+}
+
+
+.circulo img {
+    width: 4.75rem;
+    height: 4.75rem;
+    border-radius: 50%;
+    margin-right: 16rem;
+    float: right;
+    margin-top: 8rem;
+}
+
+.espacoPost {
+    width: 44.188rem;
+    height: 12.5rem;
+    flex-shrink: 0;
+    border-radius: 1.625rem;
+    background: #FFF;
+    margin-left: 2.188rem;
+    margin-top: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+}
+
+.conteudoPost {
+    padding: 3.125rem;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+.perfilPost {
+    margin-left: 1.313rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.nomePerfil {
+    padding: 0.625rem;
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.usuarioData {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.dataPost {
+    padding: 0.625rem;
+}
+
+.perfilPost img {
+    width: 5.75rem;
+    height: 5.75rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 1350px) {
+    body {
+        grid-template-columns: 1fr;
+
+    }
+
+    .carrossel {
+        margin-top: 5rem;
+
+    }
+
+
+    .compartilhe button{
+        margin-top: 6rem;
+    
+    }
+
+
+    .imgTopico {
+        z-index: 2;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        align-items: center;
+        gap: 150px;
+    }
+
+    #calendario {
+        font-size: 20px;
+    }
+
+    #meuPerfil {
+        font-size: 20px;
+    }
+
+    .navbar {
+        width: 100%;
+
+        margin-top: 0;
+        height: 8rem;
+        margin-left: 0;
+        border-radius: 0;
+        z-index: 1000;
+
+    }
+
+    .consultasCalendario {
+        display: none !important;
+    }
+
+    .containerCalendario {
+        display: none !important;
+    }
+
+
+}
+
+@media only screen and (max-width: 1300px) {
+    body {
+        grid-template-columns: 1fr;
+
+    }
+
+    .carrossel {
+        margin-top: 5rem;
+
+    }
+
+    .imgTopico {
+        z-index: 2;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        align-items: center;
+        gap: 100px;
+    }
+
+    #calendario {
+        font-size: 20px;
+    }
+
+    #meuPerfil {
+        font-size: 20px;
+    }
+
+    .navbar {
+        width: 100%;
+        margin-top: 0;
+        height: 8rem;
+        margin-left: 0;
+        border-radius: 0;
+        z-index: 1000;
+
+    }
+
+    .consultasCalendario {
+        display: none !important;
+    }
+
+    .containerCalendario {
+        display: none !important;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        grid-template-columns: 1fr;
+
+    }
+    
+    .compartilhe button{
+        margin-top: 6rem;
+        margin-left: 14rem;
+    }
+
+    .carrossel {
+        margin-top: 5rem;
+        margin-left: 7rem;
+    }
+
+    .imgTopico {
+        z-index: 2;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        align-items: center;
+        gap: 100px;
+    }
+
+    #calendario {
+        font-size: 20px;
+    }
+
+    #meuPerfil {
+        font-size: 20px;
+    }
+
+    .navbar {
+        width: 100%;
+        margin-top: 0;
+        height: 8rem;
+        margin-left: 0;
+        border-radius: 0;
+        z-index: 1000;
+
+    }
+
+    .consultasCalendario {
+        display: none !important;
+    }
+
+    .containerCalendario {
+        display: none !important;
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+        grid-template-columns: 1fr;
+
+    }
+
+    .carrossel {
+        margin-top: 5rem;
+        margin-left: 3rem;
+    }
+
+    .novoPost {
+        margin-left: 8rem;
+    }
+
+    .compartilhe {
+        margin-left: 10;
+    }
+
+    .boxContainer {
+        margin-left: 6.4rem;
+    }
+
+    .imgTopico {
+        z-index: 2;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        align-items: center;
+        gap: 70px;
+    }
+
+    #calendario {
+        font-size: 20px;
+    }
+
+    #meuPerfil {
+        font-size: 20px;
+    }
+
+    .navbar {
+        width: 100%;
+        margin-top: 0;
+        height: 8rem;
+        margin-left: 0;
+        border-radius: 0;
+        z-index: 1000;
+
+    }
+
+    .consultasCalendario {
+        display: none !important;
+    }
+
+    .containerCalendario {
+        display: none !important;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        grid-template-columns: 1fr;
+
+    }
+
+    .carrossel {
+        margin-top: 5rem;
+        margin-left: 1rem;
+    }
+
+    .novoPost {
+        margin-left: 4rem;
+    }
+
+    .compartilhe button{
+       margin-top: 6rem;
+        margin-left: 12rem;
+    }
+
+    .boxContainer {
+        margin-left: 2.4rem;
+    }
+
+    .imgTopico {
+        z-index: 2;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        align-items: center;
+        gap: 50px;
+
+    }
+
+    #calendario {
+        font-size: 20px;
+    }
+
+    #meuPerfil {
+        font-size: 20px;
+    }
+
+    .navbar {
+        width: 100%;
+        margin-top: 0;
+        height: 8rem;
+        margin-left: 0;
+        border-radius: 0;
+        z-index: 1000;
+
+    }
+
+    .consultasCalendario {
+        display: none !important;
+    }
+
+    .containerCalendario {
+        display: none !important;
+    }
+
+}
+
+
+@media only screen and (max-width: 900px) {
+    body {
+        grid-template-columns: 1fr;
+
+    }
+
+    .hamburgerMenu {
+        display: block;
+    }
+
+    .linha {
+        display: none;
+    }
+
+    .carrossel {
+        display: none;
+    }
+
+    .carrossel {
+        margin-top: 5rem;
+        margin-left: 1rem;
+    }
+
+    .novoPost {
+        margin-top: 3rem;
+        margin-left: 3rem;
+    }
+
+    .compartilhe button {
+        margin-top: -20rem;
+        margin-left: 11rem;
+    }
+
+    .boxContainer {
+        margin-left: 1rem;
+    }
+
+    .imgTopico {
+        z-index: 2;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        align-items: center;
+        gap: 50px;
+
+    }
+
+
+    #calendario {
+        font-size: 20px;
+    }
+
+    #meuPerfil {
+        font-size: 20px;
+    }
+
+    .navbar {
+        width: 100%;
+        margin-top: 0;
+        height: 8rem;
+        margin-left: 0;
+        border-radius: 0;
+        z-index: 1000;
+
+    }
+
+    .consultasCalendario {
+        display: none !important;
+    }
+
+    .containerCalendario {
+        display: none !important;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+    body {
+        grid-template-columns: 1fr;
+
+    }
+
+    .hamburgerMenu {
+        display: block;
+    }
+
+    .linha {
+        display: none;
+    }
+
+    .carrossel {
+        display: none;
+    }
+
+    .carrossel {
+        margin-top: 5rem;
+        margin-left: 1rem;
+    }
+
+    .novoPost {
+        margin-top: 3rem;
+        margin-left: 3rem;
+        width: 40rem;
+    }
+
+    .compartilhe button {
+        margin-top: -20rem;
+        margin-left: 7rem;
+        width: 7rem;
+    }
+
+    .boxContainer {
+        width: 40rem;
+        height: 81.563rem;
+        flex-shrink: 0;
+        border-radius: 50px;
+        background: #FFF;
+        margin-left: 3rem;
+        margin-top: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .post {
+        width: 35rem;
+    }
+
+    .espacoPost {
+        width: 30rem;
+    }
+
+    .imgTopico {
+        z-index: 2;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        align-items: center;
+        gap: 50px;
+
+    }
+
+
+
+
+    .navbar {
+        width: 100%;
+        margin-top: 0;
+        height: 8rem;
+        margin-left: 0;
+        border-radius: 0;
+        z-index: 1000;
+
+    }
+
+    .consultasCalendario {
+        display: none !important;
+    }
+
+    .containerCalendario {
+        display: none !important;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        grid-template-columns: 1fr;
+
+    }
+
+    .hamburgerMenu {
+        display: block;
+    }
+
+    .linha {
+        display: none;
+    }
+
+    .carrossel {
+        display: none;
+    }
+
+
+    .novoPost {
+        margin-top: 3rem;
+        margin-left: 3rem;
+        width: 30rem;
+    }
+
+    .compartilhe button {
+        margin-top: -20rem;
+        margin-left: 2rem;
+        width: 7rem;
+    }
+
+    .boxContainer {
+        width: 30rem;
+        height: 81.563rem;
+        flex-shrink: 0;
+        border-radius: 50px;
+        background: #FFF;
+        margin-left: 3rem;
+        margin-top: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .post {
+        width: 25rem;
+    }
+
+    .espacoPost {
+        width: 20rem;
+    }
+
+    .imgTopico {
+        z-index: 2;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        align-items: center;
+        gap: 50px;
+
+    }
+
+
+
+    .navbar {
+        width: 100%;
+        margin-top: 0;
+        height: 8rem;
+        margin-left: 0;
+        border-radius: 0;
+        z-index: 1000;
+
+    }
+
+    .consultasCalendario {
+        display: none !important;
+    }
+
+    .containerCalendario {
+        display: none !important;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+    body {
+        grid-template-columns: 1fr;
+
+    }
+
+    .hamburgerMenu {
+        display: block;
+    }
+
+    .logo {
+        margin-right: 5rem;
+    }
+
+    .linha {
+        display: none;
+    }
+
+    .carrossel {
+        display: none;
+    }
+
+
+    .novoPost {
+        margin-top: 3rem;
+        margin-left: 0.4rem;
+        width: 30rem;
+    }
+
+    .compartilhe button {
+        margin-left: 1rem;
+        width: 7rem;
+
+    }
+
+    .boxContainer {
+        width: 30rem;
+        height: 81.563rem;
+        flex-shrink: 0;
+        border-radius: 50px;
+        background: #FFF;
+        margin-left: 0.4rem;
+        margin-top: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .post {
+        width: 25rem;
+    }
+
+    .espacoPost {
+        width: 20rem;
+    }
+
+    .imgTopico {
+        z-index: 2;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        align-items: center;
+        gap: 50px;
+
+    }
+
+    .menu__box {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 160px;
+
+
+
+        .navbar {
+            width: 100%;
+            margin-top: 0;
+            height: 8rem;
+            margin-left: 0;
+            border-radius: 0;
+            z-index: 1000;
+
+        }
+
+        .consultasCalendario {
+            display: none !important;
+        }
+
+        .containerCalendario {
+            display: none !important;
+        }
+
+    }
+
+
+
+
+
+
+}

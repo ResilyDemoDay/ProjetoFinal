@@ -1,0 +1,609 @@
+/* RESET CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* BACKGROUND */
+@media screen and (min-width: 800px) {
+    
+  }
+
+  :root {
+    --borda: rgba(45, 46, 74, 0.8);
+    --SOMBRA: 4px 4px 4px 0px rgba(0, 0, 0, 0.31);
+  }
+
+@font-face {
+    font-family: 'westmount';
+    src: url(../fonts/*);
+}
+body{
+    background: #e7e7e7;
+    width: 100%;
+    height: 100%;
+    font-family: 'westmount';
+}
+/* CABEÇALHO */
+.cabecalho{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition: top .35s;
+    z-index: 10;
+    /* padding: 0px 170px 100px 170px; */
+}
+.bg-blur {
+    background: transparent;
+    backdrop-filter: blur(10px);
+  }
+.cabecalho ul {
+    display: flex;
+    justify-content: center;
+}
+.cabecalho li{
+    display: flex;
+    align-items: center;
+    margin: 0 70px 0 70px;
+    
+   
+}
+
+
+a{
+    color: #11111f;
+    transition: .6s;
+}
+a:hover{
+    color: #11111f; 
+    font-size: 17px;
+}
+.logo a{ 
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 120px;
+    background: url(../img/resily_home_dark.png)no-repeat;
+    background-size: 100px;
+    background-position: center;
+    font-size: 0;
+    transition: .6s;
+}
+.logo a:hover{
+    background-size: 110px;
+    
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    margin-right:16%;
+}
+
+.boxTop .grupo{
+    position: relative;
+    width: 1006px;
+    height: 514px;
+    margin-bottom: 10px;
+    top: 113px;
+    left: 158px;
+    border-radius: 45px;
+    box-shadow: 7px 6px 8.1px #00000091;
+    background: rgb(236,123,212);
+    background: linear-gradient(145deg, rgba(236,123,212,0.9178046218487395) 7%, rgba(58,49,75,0.9598214285714286) 68%, rgba(45,46,74,0.9822303921568627) 78%);
+}
+.boxTop .logoCentro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 16px;
+    left: 388px;
+}
+
+.boxTop .textoGrupo{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 77px;
+        top: 287px;
+        color: white;
+}
+
+/* PROPOSITO */
+
+.proposito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 232px;
+}
+.titulo{
+    color: #2F0133;
+    font-size: 3.6rem;
+    margin-bottom: 40px;
+    margin-top: 102px;
+    font-weight: bold;
+}   
+.valores{
+    display:flex;
+    flex-direction: column;
+   
+}
+.texto-esquerda{
+    display: flex;
+    justify-content: space-between;
+}
+.texto-esquerda p{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    font-size: 34px;
+    color: #2F0133;
+}
+
+.texto-direita{
+    display: flex;
+    justify-content: space-between;
+}
+.texto-direita p{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: right;
+    font-size: 35px;
+    font-weight: 500;
+    color: #2F0133;
+}
+.valores img{
+    width: 331px;
+    height: 314px;
+}
+.proposito .elementoFundo01{
+    position: absolute;
+    width: 952px;
+    height: 697px;
+    top: 935px;
+    display: flex;
+    justify-items: center;
+    left: 355px;
+    z-index: -14;
+}
+
+
+
+/* CONHAÇA A RESILY */
+.sobre-nos{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.sobre-nos h3{
+    color: #2F0133;
+    text-align: center;
+    font-size: 20px;
+}
+.servicos{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 2053px;
+    left: 20px;
+}
+
+.card0{
+    position: relative;
+    width: 311px;
+    height: 530px;
+    top: 0;
+    left: 66px;
+}
+
+.overCard{
+    position: relative;
+    width: 309px;
+    height: 530px;
+    background-color: #5e386305;
+    border-radius: 22px;
+    box-shadow: var(--SOMBRA);
+}
+
+.overCardGrupo{
+    position: absolute;
+    width: 309px;
+    height: 228px;
+    top: 0;
+    left: 0;
+}
+
+.elementoCardTopo{
+    position: absolute;
+    width: 309px;
+    height: 253px;
+    top: 0;
+    left: 0;
+    background-color: #756182;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.imgCard{
+    position: absolute;
+    width: 219px;
+    height: 215px;
+    top: -20px;
+    left: -8px;
+    object-fit: cover;
+}
+
+.textoCard1{
+    width: 220px;
+    top: 284px;
+    left: 44px;
+    color: #2f0133;
+    text-align: justify;
+    position: absolute;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: bolder;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.botaoCard{
+    position: absolute;
+    width: 228px;
+    height: 53px;
+    top: 428px;
+    left: 42px;
+}
+
+.textoBotaoCard{
+    position: relative;
+    width: 226px;
+    height: 53px;
+    border-radius: 10px;
+    box-shadow: var(--SOMBRA);
+    background: rgb(45,46,74);
+    background: linear-gradient(317deg, rgba(45,46,74,1) 14%, rgba(236,123,212,1) 100%);
+}
+
+.textoBotao{
+    top: 15px;
+left: 67px;
+color: #ffffff;
+text-align: center;
+white-space: nowrap;
+position: absolute;
+font-family: "Inter-Regular", Helvetica;
+font-weight: 400;
+font-size: 20px;
+letter-spacing: 0;
+line-height: normal;
+}
+
+
+
+
+
+.card2{
+    position: relative;
+    width: 385px;
+    height: 518px;
+    top: -52px;
+    left: -103px;
+}
+
+.overCard2{
+    position: relative;
+    width: 309px;
+    height: 530px;
+    background-color: #5e386305;
+    border-radius: 22px;
+    box-shadow: var(--SOMBRA);
+    top: 50px;
+    left: 280px;
+}
+
+.overCardGrupo2{
+    position: absolute;
+    width: 309px;
+    height: 228px;
+    top: 0;
+    left: 0;
+}
+
+.elementoCardTopo2{
+    position: absolute;
+    width: 309px;
+    height: 253px;
+    top: 0;
+    left: 0;
+    background-color: #756182;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.imgCard2{
+    position: absolute;
+    width: 219px;
+    height: 215px;
+    top: -20px;
+    left: -8px;
+    object-fit: cover;
+}
+
+.textoCard2{
+    width: 220px;
+    top: 284px;
+    left: 44px;
+    color: #2f0133;
+    text-align: justify;
+    position: absolute;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: bolder;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.botaoCard2{
+    position: absolute;
+    width: 228px;
+    height: 53px;
+    top: 428px;
+    left: 42px;
+}
+
+.textoBotaoCard2{
+    position: relative;
+    width: 226px;
+    height: 53px;
+    border-radius: 10px;
+    box-shadow: var(--SOMBRA);
+    background: rgb(45,46,74);
+    background: linear-gradient(317deg, rgba(45,46,74,1) 14%, rgba(236,123,212,1) 100%);
+}
+
+.textoBotao2{
+    top: 15px;
+left: 67px;
+color: #ffffff;
+text-align: center;
+white-space: nowrap;
+position: absolute;
+font-family: "Inter-Regular", Helvetica;
+font-weight: 400;
+font-size: 20px;
+letter-spacing: 0;
+line-height: normal;
+}
+
+
+
+.botao2{
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    background-color: #e277cd;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+
+
+
+.card3{
+    position: relative;
+    width: 311px;
+    height: 530px;
+    top: -51px;
+    left: -137px;
+}
+
+.overCard3{
+    position: relative;
+    width: 309px;
+    height: 530px;
+    background-color: #5e386305;
+    border-radius: 22px;
+    box-shadow: var(--SOMBRA);
+    top: 50px;
+    left: 350px;
+}
+
+.overCardGrupo3{
+    position: absolute;
+    width: 309px;
+    height: 228px;
+    top: 0;
+    left: 0;
+}
+
+.elementoCardTopo3{
+    position: absolute;
+    width: 309px;
+    height: 253px;
+    top: 0;
+    left: 0;
+    background-color: #756182;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.imgCard3{
+    position: absolute;
+    width: 219px;
+    height: 215px;
+    top: -29px;
+    left: -7px;
+    object-fit: cover;
+    scale: 0.8;
+}
+
+.textoCard3{
+    width: 220px;
+    top: 284px;
+    left: 44px;
+    color: #2f0133;
+    text-align: justify;
+    position: absolute;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: bolder;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.botaoCard3{
+    position: absolute;
+    width: 228px;
+    height: 53px;
+    top: 428px;
+    left: 42px;
+}
+
+.textoBotaoCard3{
+    position: relative;
+    width: 226px;
+    height: 53px;
+    border-radius: 10px;
+    box-shadow: var(--SOMBRA);
+    background: rgb(45,46,74);
+    background: linear-gradient(317deg, rgba(45,46,74,1) 14%, rgba(236,123,212,1) 100%);
+}
+
+.textoBotao3{
+    top: 15px;
+left: 67px;
+color: #ffffff;
+text-align: center;
+white-space: nowrap;
+position: absolute;
+font-family: "Inter-Regular", Helvetica;
+font-weight: 400;
+font-size: 20px;
+letter-spacing: 0;
+line-height: normal;
+}
+
+
+
+.botao2{
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    background-color: #e277cd;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+
+.card{
+    
+background: rgba(0,0,0,0);
+    
+margin-bottom: 51px;
+    
+text-decoration: none;
+}
+.card-header{
+    background: transparent;
+    border: none;
+}
+.card button{
+    color: #fff;
+}
+.texto{
+    color: #fff;
+}
+
+.frequently{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 2588px;
+    left: 269px;
+}
+
+.card{
+    width: 24px;
+    position: relative;
+    top: 51px;
+    left: -62px;
+    margin-right: 20px;
+    border: none;
+}
+.card-body p{
+    text-align: justify;
+    width: 90vh;
+} 
+.card .btn:hover{
+    color: #e277cd!important;
+
+}
+.card hr{
+    border: solid 2px #e277cd ;
+    width: 800px;
+    z-index: 1;
+}
+
+/* SIGN IN */
+
+
+
+/* LOGIN *//*
+

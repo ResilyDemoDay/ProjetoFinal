@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Página de Cadastro</title>
+</head>
+
+<body>
+  <div class="logo-meio">
+    <img src="../../Assets/resily-logo.png" alt="Logo da Resily, dois corações que se entrelaçam 
+    simbolizando o amor eterno da mãe com o filho e embaixo o slogan Fortalecendo Guerreiras.">
+  </div>
+
+  <div class="main">
+    <div class="container">
+
+      <form method="post">
+
+        <label for="email">e-mail </label>
+        <input type="email" id="email" placeholder="Ex: resily@lorem.com">
+
+        <label for="nome-usuario">nome usuario </label>
+        <input type="text" id="nome" placeholder="Ex: Maria">
+
+        <label for="senha">senha </label>
+        <input type="password" id="senha" placeholder="Digite sua melhor senha">
+
+        <label for="confirmar-senha">confirmar senha </label>
+        <input type="password" placeholder="Confirme sua senha">
+      </form>
+
+      <div class="botao">
+        <div class="btn">
+          <button type="button" onclick="enviarCadastro()" value="Cadastrar"> <a>Criar Conta</a></button>
+          <button onclick="redirecionar()">Login</button>
+        </div>
+
+
+
+        <div class="btn-parceiro">
+          <button class="parceiro">Quero ser parceiro </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
