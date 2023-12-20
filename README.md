@@ -1,1 +1,3 @@
 # DemoDay Resily
+
+### Somos uma plataforma que oferece uma rede de apoio para pessoas que vivem a maternidade. Oferecemos uma rede social para as nossas mamães possam tirar suas duvidas, compartilhar seus medos, desafios e desabafos com outras mães que passam ou já passaram por essa fase. E tambem contamos com um sistema de video chamada onde as mães podem receber apoio de um psicologo parceiro da plataforma, podendo marcas as consultas atraves do calendario no horario que melhor se encaixar na sua rotina diretamente na nossa plataforma. Aqui na Resily todas as nossas usuárias são importantes.
